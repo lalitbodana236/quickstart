@@ -4,6 +4,7 @@ import java.net.http.HttpRequest;
 import java.security.Principal;
 import java.util.UUID;
 
+import org.jasypt.encryption.StringEncryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
@@ -31,9 +32,13 @@ public class HomeController {
 
 	@Autowired
 	private IUserRepository userRepo;
-	
+
 	@Autowired
 	SmtpMailSender mail;
+
+	@Autowired
+	private StringEncryptor encryptor;
+
 
 	@ModelAttribute
 	public void commonUser(Principal p, Model m) {
@@ -47,8 +52,6 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String index() throws MessagingException {
-		//mail.sendMail("lalitbodana236@gmail.com", "welcome to community", "testing");
-		
 		return "index";
 	}
 
@@ -61,7 +64,7 @@ public class HomeController {
 	public String login() {
 		return "login";
 	}
-	
+
 	@GetMapping("/about")
 	public String about() {
 		return "about";
@@ -94,7 +97,7 @@ public class HomeController {
 
 		User u = userService.save(user);
 		userService.sendEmail(user, url);
-		
+
 
 		if (u != null) {
 			// System.out.println("save sucess");
@@ -106,7 +109,7 @@ public class HomeController {
 		}
 		return "redirect:/register";
 	}
-	
+
 	@GetMapping("/verify")
 	public String verifyAccount(@Param("code") String code, Model m) {
 		boolean f = userService.verifyAccount(code);

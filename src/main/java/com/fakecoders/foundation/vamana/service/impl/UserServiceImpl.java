@@ -22,14 +22,14 @@ public class UserServiceImpl implements IUserService {
 
 	@Autowired
 	private IUserRepository userRepository;
-	
+
 	@Autowired
 	private BCryptPasswordEncoder passwordEncoder;
-	
+
 	/*
 	 * @Autowired private JavaMailSender mailSender;
 	 */
-	
+
 	@Autowired
 	SmtpMailSender mail;
 
@@ -38,7 +38,7 @@ public class UserServiceImpl implements IUserService {
 		String password=passwordEncoder.encode(user.getPassword());
 		user.setPassword(password);
 		user.setRole("ROLE_USER");
-		
+
 		return userRepository.save(user);
 	}
 
@@ -53,7 +53,7 @@ public class UserServiceImpl implements IUserService {
 		String to = user.getEmail();
 		String subject = "Account Verfication";
 		String content = "Dear [[name]],<br>" + "Please click the link below to verify your registration:<br>"
-				+ "<h3><a href=\"[[URL]]\" target=\"_self\">VERIFY</a></h3>" + "Thank you,<br>" + "Fakecoders";
+				+ "<h3><a href=\"[[URL]]\" target=\"_self\">VERIFY</a></h3>" + "Thank you,<br>" + "Coders Army";
 
 		try {
 			content = content.replace("[[name]]", user.getFirstname()+" "+user.getLastname());
