@@ -47,7 +47,7 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String index() throws MessagingException {
-		mail.sendMail("lalitbodana236@gmail.com", "welcome to community", "testing");
+		//mail.sendMail("lalitbodana236@gmail.com", "welcome to community", "testing");
 		
 		return "index";
 	}
@@ -60,6 +60,11 @@ public class HomeController {
 	@GetMapping("/signin")
 	public String login() {
 		return "login";
+	}
+	
+	@GetMapping("/about")
+	public String about() {
+		return "about";
 	}
 
 	/*
