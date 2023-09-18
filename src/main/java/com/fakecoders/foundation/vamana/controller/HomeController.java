@@ -83,6 +83,11 @@ public class HomeController {
 	public String home() {
 		return "home";
 	}
+	
+	@GetMapping("/home")
+	public String homeOne() {
+		return "home";
+	}
 
 	@PostMapping("/saveUser")
 	public String saveUser(@ModelAttribute User user, HttpSession session, Model m,HttpServletRequest request) {
