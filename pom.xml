@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.fakecoders</groupId>
 	<artifactId>vamana</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>vamana</name>
 	<description>Believe in our creativity</description>
 	<properties>
