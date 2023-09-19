@@ -1,3 +1,4 @@
+
 When you're developing a frontend application in Angular with a backend in Spring Boot, you'll need to consider security practices for both the frontend and backend to ensure comprehensive security. Here's a security checklist tailored to your specific tech stack:
 
 **Frontend (Angular):**
