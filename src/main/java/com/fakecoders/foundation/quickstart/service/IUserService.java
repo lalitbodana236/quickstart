@@ -1,6 +1,6 @@
-package com.fakecoders.foundation.vamana.service;
+package com.fakecoders.foundation.quickstart.service;
 
-import com.fakecoders.foundation.vamana.model.User;
+import com.fakecoders.foundation.quickstart.model.User;
 
 public interface IUserService {
 	

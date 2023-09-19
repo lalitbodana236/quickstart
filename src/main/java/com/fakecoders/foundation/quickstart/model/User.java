@@ -1,4 +1,4 @@
-package com.fakecoders.foundation.vamana.model;
+package com.fakecoders.foundation.quickstart.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

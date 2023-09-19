@@ -1,13 +1,13 @@
-package com.fakecoders.foundation.vamana.custom.service.impl;
+package com.fakecoders.foundation.quickstart.custom.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
-import com.fakecoders.foundation.vamana.custom.model.CustomUserDetails;
-import com.fakecoders.foundation.vamana.model.User;
-import com.fakecoders.foundation.vamana.repository.IUserRepository;
+import com.fakecoders.foundation.quickstart.custom.model.CustomUserDetails;
+import com.fakecoders.foundation.quickstart.model.User;
+import com.fakecoders.foundation.quickstart.repository.IUserRepository;
 
 public class CustomUserDetailsServiceImpl implements UserDetailsService {
 

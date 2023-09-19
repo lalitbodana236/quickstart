@@ -1,4 +1,4 @@
-package com.fakecoders.foundation.vamana.controller;
+package com.fakecoders.foundation.quickstart.controller;
 
 import java.net.http.HttpRequest;
 import java.security.Principal;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.fakecoders.foundation.vamana.config.SmtpMailSender;
-import com.fakecoders.foundation.vamana.model.User;
-import com.fakecoders.foundation.vamana.repository.IUserRepository;
-import com.fakecoders.foundation.vamana.service.IUserService;
+import com.fakecoders.foundation.quickstart.config.SmtpMailSender;
+import com.fakecoders.foundation.quickstart.model.User;
+import com.fakecoders.foundation.quickstart.repository.IUserRepository;
+import com.fakecoders.foundation.quickstart.service.IUserService;
 
 import jakarta.mail.MessagingException;
 import jakarta.servlet.http.HttpServletRequest;

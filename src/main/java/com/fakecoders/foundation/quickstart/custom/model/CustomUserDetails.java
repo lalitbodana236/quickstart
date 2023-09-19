@@ -1,4 +1,4 @@
-package com.fakecoders.foundation.vamana.custom.model;
+package com.fakecoders.foundation.quickstart.custom.model;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -7,7 +7,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.fakecoders.foundation.vamana.model.User;
+import com.fakecoders.foundation.quickstart.model.User;
 
 public class CustomUserDetails implements UserDetails {
 

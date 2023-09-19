@@ -1,4 +1,4 @@
-package com.fakecoders.foundation.vamana.config;
+package com.fakecoders.foundation.quickstart.config;
 
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.jasypt.encryption.pbe.config.EnvironmentPBEConfig;

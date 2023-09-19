@@ -1,4 +1,4 @@
-package com.fakecoders.foundation.vamana.service.impl;
+package com.fakecoders.foundation.quickstart.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -8,10 +8,10 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 
-import com.fakecoders.foundation.vamana.config.SmtpMailSender;
-import com.fakecoders.foundation.vamana.model.User;
-import com.fakecoders.foundation.vamana.repository.IUserRepository;
-import com.fakecoders.foundation.vamana.service.IUserService;
+import com.fakecoders.foundation.quickstart.config.SmtpMailSender;
+import com.fakecoders.foundation.quickstart.model.User;
+import com.fakecoders.foundation.quickstart.repository.IUserRepository;
+import com.fakecoders.foundation.quickstart.service.IUserService;
 
 import jakarta.servlet.http.HttpSession;
 import jakarta.mail.internet.MimeMessage;

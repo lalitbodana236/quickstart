@@ -1,4 +1,4 @@
-package com.fakecoders.foundation.vamana.config;
+package com.fakecoders.foundation.quickstart.config;
 
 import java.util.Properties;
 

@@ -1,4 +1,4 @@
-package com.fakecoders.foundation.vamana.controller;
+package com.fakecoders.foundation.quickstart.controller;
 
 
 import java.security.Principal;
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.fakecoders.foundation.vamana.model.User;
-import com.fakecoders.foundation.vamana.repository.IUserRepository;
+import com.fakecoders.foundation.quickstart.model.User;
+import com.fakecoders.foundation.quickstart.repository.IUserRepository;
 
 
 @Controller

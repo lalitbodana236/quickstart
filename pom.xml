@@ -9,9 +9,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.fakecoders</groupId>
-	<artifactId>vamana</artifactId>
+	<artifactId>quickstart</artifactId>
 	<version>0.0.1</version>
-	<name>vamana</name>
+	<name>quickstart</name>
 	<description>Believe in our creativity</description>
 	<properties>
 		<java.version>17</java.version>
