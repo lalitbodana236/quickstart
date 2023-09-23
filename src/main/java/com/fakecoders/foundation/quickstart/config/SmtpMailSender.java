@@ -6,21 +6,26 @@ import org.jasypt.encryption.StringEncryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.mail.javamail.MimeMessageHelper;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.stereotype.Component;
+import org.springframework.ui.freemarker.FreeMarkerConfigurationFactoryBean;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.Session;
 import jakarta.mail.Store;
 import jakarta.mail.internet.MimeMessage;
 
-@Component
+//@Configuration
+//@EnableAsync
 public class SmtpMailSender {
 
-	@Autowired
-	private StringEncryptor encryptor;
+	//@Autowired
+	//private StringEncryptor encryptor;
 
 	@Value("${spring.mail.username}")
 	private String from;
@@ -33,15 +38,16 @@ public class SmtpMailSender {
 
 	@Value("${spring.mail.port}")
 	private String port;
+	
 
 	@Bean
 	public JavaMailSender javaMailSender() {
 		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
 		mailSender.setHost(host);
 		mailSender.setPort(Integer.parseInt(port));
-		String pass=encryptor.decrypt(password);
+		//String pass=encryptor.decrypt(password);
 		mailSender.setUsername(from);
-		mailSender.setPassword(pass);
+		//mailSender.setPassword(pass);
 
 		Properties props = mailSender.getJavaMailProperties();
 		props.put("mail.transport.protocol", "smtp");

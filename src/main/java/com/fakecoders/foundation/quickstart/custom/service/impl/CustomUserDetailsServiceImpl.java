@@ -1,5 +1,9 @@
 package com.fakecoders.foundation.quickstart.custom.service.impl;
 
+import java.util.Optional;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -10,6 +14,7 @@ import com.fakecoders.foundation.quickstart.model.User;
 import com.fakecoders.foundation.quickstart.repository.IUserRepository;
 
 public class CustomUserDetailsServiceImpl implements UserDetailsService {
+	 private static final Logger logger = LoggerFactory.getLogger(CustomUserDetailsServiceImpl.class);
 
 	@Autowired
 	private IUserRepository userRepository;
@@ -24,5 +29,12 @@ public class CustomUserDetailsServiceImpl implements UserDetailsService {
 			return new CustomUserDetails(user);
 		}
 	}
+	
+	 public UserDetails loadUserById(Integer id) {
+	        Optional<User> dbUser = userRepository.findById(id);
+	        logger.info("Fetched user : " + dbUser + " by " + id);
+	        return dbUser.map(CustomUserDetails::new)
+	                .orElseThrow(() -> new UsernameNotFoundException("Couldn't find a matching user id in the database for " + id));
+	    }
 
 }
