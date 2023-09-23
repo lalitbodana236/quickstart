@@ -1,6 +1,7 @@
 package com.fakecoders.foundation.quickstart.security.config;
 
 import java.io.IOException;
+import java.util.Enumeration;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -50,20 +51,33 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response,
 			FilterChain filterChain) throws ServletException, IOException {
 		try {
+			logger.info("inside JwtAuthenticationFilter header {} , request {} ",request, request.getHeaderNames().toString());
 			logger.info("inside JwtAuthenticationFilter");
 			if (request.getServletPath().contains("/api/v1/auth")) {
 				filterChain.doFilter(request, response);
 				return;
 			}
+			
+			logger.info("inside JwtAuthenticationFilter header {} ",request.getHeader("Content-Type"));
 			final String authHeader = request.getHeader("Authorization");
+			Enumeration<String> headerNames = request.getHeaderNames();
+			while (headerNames.hasMoreElements()) {
+			    String headerName = headerNames.nextElement();
+			    String headerValue = request.getHeader(headerName);
+			    System.out.println(headerName + ": " + headerValue);
+			}
+			
 			final String jwt;
 			final String userEmail;
 			if (authHeader == null ||!authHeader.startsWith("Bearer ")) {
 				filterChain.doFilter(request, response);
 				return;
 			}
+			logger.info("inside JwtAuthenticationFilter authHeader {}",authHeader);
 			jwt = authHeader.substring(7);
+			logger.info("inside JwtAuthenticationFilter jwt {}",jwt);
 			userEmail = jwtService.extractUsername(jwt);
+			logger.info("inside JwtAuthenticationFilter userEmail {}",userEmail);
 			if (StringUtils.hasText(jwt) && jwtTokenValidator.validateToken(jwt)) {
 				logger.info("inside JwtAuthenticationFilter in");
 				if (userEmail != null && SecurityContextHolder.getContext().getAuthentication() == null) {
@@ -87,6 +101,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 
 		} catch (Exception ex) {
+			ex.printStackTrace();
 			//log.error("Failed to set user authentication in security context: ", ex);
 			throw ex;
 		}

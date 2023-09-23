@@ -1,5 +1,6 @@
 package com.fakecoders.foundation.quickstart.service.impl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -156,6 +157,11 @@ public class UserServiceImpl implements IUserService {
 	@Override
 	public Optional<User> findByUserId(Integer id) {
 		return userRepository.findById(id);
+	}
+
+	@Override
+	public List<User> findAllUser() {
+		return userRepository.findAll();
 	}
 
 

@@ -1,5 +1,6 @@
 package com.fakecoders.foundation.quickstart.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.fakecoders.foundation.quickstart.custom.model.CustomUserDetails;
@@ -32,5 +33,7 @@ public interface IUserService {
 	Optional<User> findByUserId(Integer id);
 
 	public void logoutUser(CustomUserDetails customUserDetails, @Valid LogOutRequest logOutRequest);
+
+	public List<User> findAllUser();
 	
 }
