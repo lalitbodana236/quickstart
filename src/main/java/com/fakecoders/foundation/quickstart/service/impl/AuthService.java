@@ -243,6 +243,7 @@ public class AuthService {
      */
     public Optional<PasswordResetToken> generatePasswordResetToken(PasswordResetLinkRequest passwordResetLinkRequest) {
         String email = passwordResetLinkRequest.getEmail();
+        logger.info("generatePasswordResetToken email {} ",email);
         return userService.findByEmail(email)
                 .map(passwordResetService::createToken)
                 .orElseThrow(() -> new PasswordResetLinkException(email, "No matching user found for the given request"));

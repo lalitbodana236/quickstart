@@ -23,6 +23,7 @@ import com.fakecoders.foundation.quickstart.model.User;
 import com.fakecoders.foundation.quickstart.model.UserDevice;
 import com.fakecoders.foundation.quickstart.model.payload.LogOutRequest;
 import com.fakecoders.foundation.quickstart.model.payload.RegistrationRequest;
+import com.fakecoders.foundation.quickstart.model.payload.UserInfoResponse;
 import com.fakecoders.foundation.quickstart.repository.IUserRepository;
 import com.fakecoders.foundation.quickstart.service.IUserService;
 
@@ -32,7 +33,7 @@ import jakarta.mail.internet.MimeMessage;
 
 @Service
 public class UserServiceImpl implements IUserService {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(UserServiceImpl.class);
 
 	@Autowired
@@ -40,13 +41,13 @@ public class UserServiceImpl implements IUserService {
 
 	@Autowired
 	private PasswordEncoder passwordEncoder;
-	
-	 private final UserDeviceService userDeviceService;
-	 
-	 private final RefreshTokenService refreshTokenService;
 
-	 
-	 
+	private final UserDeviceService userDeviceService;
+
+	private final RefreshTokenService refreshTokenService;
+
+
+
 	public UserServiceImpl(UserDeviceService userDeviceService, RefreshTokenService refreshTokenService) {
 		super();
 		this.userDeviceService = userDeviceService;
@@ -60,10 +61,6 @@ public class UserServiceImpl implements IUserService {
 
 	@Override
 	public User save(User user) {
-		String password=passwordEncoder.encode(user.getPassword());
-		user.setPassword(password);
-		user.setRole(Role.USER);
-
 		return userRepository.save(user);
 	}
 
@@ -85,7 +82,7 @@ public class UserServiceImpl implements IUserService {
 			String siteUrl = url + "/verify?code=" + user.getVerificationCode();
 			System.out.println(siteUrl);
 			content = content.replace("[[URL]]", siteUrl);
-		//	mail.sendMail(to, subject, content);
+			//	mail.sendMail(to, subject, content);
 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -105,54 +102,60 @@ public class UserServiceImpl implements IUserService {
 			return true;
 		}
 	}
-	
-	 /**
-     * Log the given user out and delete the refresh token associated with it. If no device
-     * id is found matching the database for this user, throw a log out exception.
-     */
-    public void logoutUser(@CurrentUser CustomUserDetails currentUser, LogOutRequest logOutRequest) {
-        String deviceId = logOutRequest.getDeviceInfo().getDeviceId();
-        UserDevice userDevice = userDeviceService.findDeviceByUserId(currentUser.getUserid(), deviceId)
-                .filter(device -> device.getDeviceId().equals(deviceId))
-                .orElseThrow(() -> new UserLogoutException(logOutRequest.getDeviceInfo().getDeviceId(), "Invalid device Id supplied. No matching device found for the given user "));
 
-        logger.info("Removing refresh token associated with device [" + userDevice + "]");
-        refreshTokenService.deleteById(userDevice.getRefreshToken().getId());
-    }
-    
-    /**
-     * Check is the user exists given the email: naturalId
-     */
-    public Boolean existsByEmail(String email) {
-        return userRepository.existsByEmail(email);
-    }
+	/**
+	 * Log the given user out and delete the refresh token associated with it. If no device
+	 * id is found matching the database for this user, throw a log out exception.
+	 */
+	public void logoutUser(@CurrentUser CustomUserDetails currentUser, LogOutRequest logOutRequest) {
+		String deviceId = logOutRequest.getDeviceInfo().getDeviceId();
+		UserDevice userDevice = userDeviceService.findDeviceByUserId(currentUser.getUserid(), deviceId)
+				.filter(device -> device.getDeviceId().equals(deviceId))
+				.orElseThrow(() -> new UserLogoutException(logOutRequest.getDeviceInfo().getDeviceId(), "Invalid device Id supplied. No matching device found for the given user "));
 
-    /**
-     * Check is the user exists given the username: naturalId
-     */
-    public Boolean existsByUsername(String username) {
-        return userRepository.existsByEmail(username);
-    }
+		logger.info("Removing refresh token associated with device [" + userDevice + "]");
+		refreshTokenService.deleteById(userDevice.getRefreshToken().getId());
+	}
+
+	/**
+	 * Check is the user exists given the email: naturalId
+	 */
+	public Boolean existsByEmail(String email) {
+		return userRepository.existsByEmail(email);
+	}
+
+	/**
+	 * Check is the user exists given the username: naturalId
+	 */
+	public Boolean existsByUsername(String username) {
+		return userRepository.existsByEmail(username);
+	}
 
 	@Override
 	public Optional<User> findByEmail(String username) {
-		return Optional.of(userRepository.findByEmail(username));
+		logger.info("findByEmail {} ", username);
+		User user =userRepository.findByEmail(username);
+		logger.info("findByEmail user {} ", user.getEmail());
+		return Optional.of(user);
 	}
-	
-	 /**
-     * Creates a new user from the registration request
-     */
-    public User createUser(RegistrationRequest registerRequest) {
-        User newUser = new User();
-      //  Boolean isNewUserAsAdmin = registerRequest.getRegisterAsAdmin();
-        newUser.setEmail(registerRequest.getEmail());
-        newUser.setPassword(registerRequest.getPassword());
-        //newUser.setUsername(registerRequest.getUsername());
-       // newUser.addRoles(getRolesForNewUser(isNewUserAsAdmin));
-        newUser.setEnable(true);
-        newUser.setIsEmailVerified(false);
-        return newUser;
-    }
+
+	/**
+	 * Creates a new user from the registration request
+	 */
+	public User createUser(RegistrationRequest registerRequest) {
+		User newUser = new User();
+		newUser.setEmail(registerRequest.getEmail());
+		newUser.setUsername(registerRequest.getUsername());
+		newUser.setFirstname(registerRequest.getFirstname());
+		newUser.setLastname(registerRequest.getLastname());
+		newUser.setMobile(registerRequest.getMobile());
+		newUser.setEnable(true);
+		newUser.setIsEmailVerified(false);
+		String password=passwordEncoder.encode(registerRequest.getPassword());
+		newUser.setPassword(password);
+		newUser.setRole(Role.USER);
+		return newUser;
+	}
 
 	@Override
 	public Optional<User> findByUserId(Integer id) {
@@ -164,5 +167,15 @@ public class UserServiceImpl implements IUserService {
 		return userRepository.findAll();
 	}
 
+	@Override
+	public UserInfoResponse getUserInfo(String email){
+		User user =userRepository.findByEmail(email);
+		return UserInfoResponse.builder()
+				.email(user.getEmail())
+				.firstname(user.getFirstname())
+				.lastname(user.getLastname())
+				.mobile(user.getMobile())
+				.username(user.getUsername()).build();	
+	}
 
 }

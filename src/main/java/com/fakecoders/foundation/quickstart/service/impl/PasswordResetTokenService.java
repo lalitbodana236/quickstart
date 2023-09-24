@@ -1,6 +1,8 @@
 package com.fakecoders.foundation.quickstart.service.impl;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -18,6 +20,8 @@ import java.util.Optional;
 
 @Service
 public class PasswordResetTokenService {
+	private static final Logger logger = LoggerFactory.getLogger(PasswordResetTokenService.class);
+
 
     private final IPasswordResetTokenRepository repository;
 
@@ -48,6 +52,7 @@ public class PasswordResetTokenService {
      * associated and persists in the token repository.
      */
     public Optional<PasswordResetToken> createToken(User user) {
+    	logger.info("createToken user email {} ",user.getEmail());
         PasswordResetToken token = createTokenWithUser(user);
         return Optional.of(repository.save(token));
     }
@@ -94,6 +99,7 @@ public class PasswordResetTokenService {
     }
 
     PasswordResetToken createTokenWithUser(User user) {
+    	logger.info("createTokenWithUser user email {} ",user.getEmail());
         String tokenID = Utils.generateRandomUuid();
         PasswordResetToken token = new PasswordResetToken();
         token.setToken(tokenID);

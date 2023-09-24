@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
 import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import com.fakecoders.foundation.quickstart.event.OnGenerateResetLinkEvent;
 import com.fakecoders.foundation.quickstart.exception.MailSendException;
@@ -46,7 +47,9 @@ public class OnGenerateResetLinkEventListener implements ApplicationListener<OnG
         PasswordResetToken passwordResetToken = event.getPasswordResetToken();
         User user = passwordResetToken.getUser();
         String recipientAddress = user.getEmail();
-        String emailConfirmationUrl = event.getRedirectUrl().queryParam("token", passwordResetToken.getToken())
+       
+        logger.info("enail link {} ",event.getRedirectUrl());
+        String emailConfirmationUrl = event.getRedirectUrl().queryParam("email", recipientAddress).queryParam("token", passwordResetToken.getToken())
                 .toUriString();
         try {
             mailService.sendResetLink(emailConfirmationUrl, recipientAddress);

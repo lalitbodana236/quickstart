@@ -8,6 +8,7 @@ import com.fakecoders.foundation.quickstart.model.User;
 import com.fakecoders.foundation.quickstart.model.UserDevice;
 import com.fakecoders.foundation.quickstart.model.payload.LogOutRequest;
 import com.fakecoders.foundation.quickstart.model.payload.RegistrationRequest;
+import com.fakecoders.foundation.quickstart.model.payload.UserInfoResponse;
 import com.fakecoders.foundation.quickstart.model.token.RefreshToken;
 
 import jakarta.validation.Valid;
@@ -35,5 +36,7 @@ public interface IUserService {
 	public void logoutUser(CustomUserDetails customUserDetails, @Valid LogOutRequest logOutRequest);
 
 	public List<User> findAllUser();
+
+	UserInfoResponse getUserInfo(String email);
 	
 }

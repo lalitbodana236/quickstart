@@ -18,10 +18,20 @@ public class JwtAuthenticationResponse {
 
 	    private Long expiryDuration;
 	    
+	    private UserInfoResponse userInfo;
+	    
 	    public JwtAuthenticationResponse(String accessToken, String refreshToken, Long expiryDuration) {
 	        this.accessToken = accessToken;
 	        this.refreshToken = refreshToken;
 	        this.expiryDuration = expiryDuration;
+	        tokenType = "Bearer ";
+	    }
+	    
+	    public JwtAuthenticationResponse(String accessToken, String refreshToken, Long expiryDuration,UserInfoResponse userInfo) {
+	        this.accessToken = accessToken;
+	        this.refreshToken = refreshToken;
+	        this.expiryDuration = expiryDuration;
+	        this.userInfo=userInfo;
 	        tokenType = "Bearer ";
 	    }
 }

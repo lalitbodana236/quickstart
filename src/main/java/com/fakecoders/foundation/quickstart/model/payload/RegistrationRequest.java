@@ -26,6 +26,15 @@ public class RegistrationRequest {
     @NotNull(message = "Registration password cannot be null")
     @Schema(name = "A valid password string", required = true, allowableValues = "NonEmpty String")
     private String password;
+    
+    @Schema(name = "A valid firstname", allowableValues = "NonEmpty String")
+    private String firstname;
+    
+    @Schema(name = "A valid lastname", allowableValues = "NonEmpty String")
+    private String lastname;
+    
+    @Schema(name = "A valid mobile")
+    private String mobile;
 
  //   @NotNull(message = "Specify whether the user has to be registered as an admin or not")
    // @Schema(name = "Flag denoting whether the user is an admin or not", required = true,
