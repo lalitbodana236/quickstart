@@ -1,0 +1,393 @@
+2023-10-17 20:20:44 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.fakecoders.foundation.QuickstartApplicationTests]: QuickstartApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-17 20:20:44 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.fakecoders.foundation.QuickstartApplication for test class com.fakecoders.foundation.QuickstartApplicationTests
+2023-10-17 20:20:45 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-17 20:20:45 [main] INFO  c.f.f.QuickstartApplicationTests - Starting QuickstartApplicationTests using Java 17.0.6 with PID 21444 (started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-10-17 20:20:45 [main] INFO  c.f.f.QuickstartApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 20:20:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 20:20:48 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 135 ms. Found 5 JPA repository interfaces.
+2023-10-17 20:20:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 20:20:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-17 20:20:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-17 20:20:50 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@537b3be1
+2023-10-17 20:20:50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-17 20:20:50 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-17 20:20:51 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-17 20:20:52 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 20:20:52 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:20:53 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 20:20:55 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68226b59, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3674164b, org.springframework.security.web.context.SecurityContextHolderFilter@18f919ce, org.springframework.security.web.header.HeaderWriterFilter@19dc9dda, org.springframework.web.filter.CorsFilter@5b1e5366, org.springframework.security.web.authentication.logout.LogoutFilter@6e591c03, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@75b6bd41, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26f50a28, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@111ae918, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@43ef1243, org.springframework.security.web.session.SessionManagementFilter@71549247, org.springframework.security.web.access.ExceptionTranslationFilter@1f748d43, org.springframework.security.web.access.intercept.AuthorizationFilter@264f18fe]
+2023-10-17 20:20:56 [main] INFO  c.f.f.QuickstartApplicationTests - Started QuickstartApplicationTests in 11.192 seconds (process running for 13.468)
+2023-10-17 20:20:56 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:20:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-17 20:20:56 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-17 20:22:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-17 20:22:06 [main] INFO  c.f.foundation.QuickstartApplication - Starting QuickstartApplication using Java 17.0.6 with PID 14848 (C:\Users\lalit\checkouts\quickstart\target\classes started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-10-17 20:22:06 [main] INFO  c.f.foundation.QuickstartApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 20:22:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 20:22:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 5 JPA repository interfaces.
+2023-10-17 20:22:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9193 (http)
+2023-10-17 20:22:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9193"]
+2023-10-17 20:22:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-17 20:22:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-10-17 20:22:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-17 20:22:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2018 ms
+2023-10-17 20:22:09 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 20:22:09 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-17 20:22:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-17 20:22:09 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4db6348b
+2023-10-17 20:22:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-17 20:22:09 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-17 20:22:09 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-17 20:22:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 20:22:11 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:22:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 20:22:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@43076326, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29244152, org.springframework.security.web.context.SecurityContextHolderFilter@2d854c13, org.springframework.security.web.header.HeaderWriterFilter@35b8b69f, org.springframework.web.filter.CorsFilter@1b81a499, org.springframework.security.web.authentication.logout.LogoutFilter@56a69c47, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@5aa5b3af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76140ca5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47b5c247, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53dfb073, org.springframework.security.web.session.SessionManagementFilter@771deee6, org.springframework.security.web.access.ExceptionTranslationFilter@65b639e1, org.springframework.security.web.access.intercept.AuthorizationFilter@5c96cbe7]
+2023-10-17 20:22:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9193"]
+2023-10-17 20:22:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9193 (http) with context path ''
+2023-10-17 20:22:13 [main] INFO  c.f.foundation.QuickstartApplication - Started QuickstartApplication in 7.249 seconds (process running for 7.821)
+2023-10-17 20:23:58 [http-nio-9193-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17 20:23:58 [http-nio-9193-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-17 20:23:58 [http-nio-9193-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2023-10-17 20:25:40 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@4ae39045 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@720ade8c 
+2023-10-17 20:25:40 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:25:40 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-10-17 20:25:40 [http-nio-9193-exec-2] ERROR c.f.f.q.s.c.JwtAuthenticationEntryPoint - User is unauthorised. Routing from the entry point
+2023-10-17 20:25:40 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationEntryPoint - header null 
+2023-10-17 20:25:43 [http-nio-9193-exec-6] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3c3cf6df , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@32fb0ef0 
+2023-10-17 20:25:43 [http-nio-9193-exec-6] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:25:43 [http-nio-9193-exec-6] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-10-17 20:25:43 [http-nio-9193-exec-6] ERROR c.f.f.q.s.c.JwtAuthenticationEntryPoint - User is unauthorised. Routing from the entry point
+2023-10-17 20:25:43 [http-nio-9193-exec-6] INFO  c.f.f.q.s.c.JwtAuthenticationEntryPoint - header null 
+2023-10-17 20:25:57 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@38db59ca , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@361ca179 
+2023-10-17 20:25:57 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:25:57 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-10-17 20:25:57 [http-nio-9193-exec-5] ERROR c.f.f.q.s.c.JwtAuthenticationEntryPoint - User is unauthorised. Routing from the entry point
+2023-10-17 20:25:57 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationEntryPoint - header null 
+2023-10-17 20:26:13 [http-nio-9193-exec-3] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@1b10cb7f , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@15d727b5 
+2023-10-17 20:26:13 [http-nio-9193-exec-3] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:26:13 [http-nio-9193-exec-3] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-10-17 20:26:13 [http-nio-9193-exec-3] ERROR c.f.f.q.s.c.JwtAuthenticationEntryPoint - User is unauthorised. Routing from the entry point
+2023-10-17 20:26:13 [http-nio-9193-exec-3] INFO  c.f.f.q.s.c.JwtAuthenticationEntryPoint - header null 
+2023-10-17 20:27:33 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3751bd6 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@db2f410 
+2023-10-17 20:27:33 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:27:33 [http-nio-9193-exec-7] INFO  c.f.f.q.service.impl.AuthService - inside JwtAuthenticationFilter sevice
+2023-10-17 20:27:33 [http-nio-9193-exec-7] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail lalitbodana236@gmail.com 
+2023-10-17 20:27:33 [http-nio-9193-exec-7] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail user lalitbodana236@gmail.com 
+2023-10-17 20:27:33 [http-nio-9193-exec-7] INFO  c.f.f.q.service.impl.AuthService -  true , test1 
+2023-10-17 20:27:34 [http-nio-9193-exec-7] INFO  c.f.f.q.a.controller.AuthController - Logged in User returned [API]: lalitbodana236@gmail.com
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@36223182 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@87cd65b 
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter authHeader Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTQ2NTQsImV4cCI6MTY5NzY0MTA1NH0.tRRpjNChKs_BdwqgEXF6vhjdbqLjvJ5JYU3W1QqbRyo
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter jwt  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTQ2NTQsImV4cCI6MTY5NzY0MTA1NH0.tRRpjNChKs_BdwqgEXF6vhjdbqLjvJ5JYU3W1QqbRyo
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter userEmail lalitbodana236@gmail.com
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in
+2023-10-17 20:27:34 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in in
+2023-10-17 20:31:14 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:31:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-17 20:31:14 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-17 20:31:30 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.fakecoders.foundation.QuickstartApplicationTests]: QuickstartApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-17 20:31:30 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.fakecoders.foundation.QuickstartApplication for test class com.fakecoders.foundation.QuickstartApplicationTests
+2023-10-17 20:31:31 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-17 20:31:31 [main] INFO  c.f.f.QuickstartApplicationTests - Starting QuickstartApplicationTests using Java 17.0.6 with PID 1856 (started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-10-17 20:31:31 [main] INFO  c.f.f.QuickstartApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 20:31:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 20:31:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 5 JPA repository interfaces.
+2023-10-17 20:31:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 20:31:33 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-17 20:31:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-17 20:31:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75e4fe3c
+2023-10-17 20:31:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-17 20:31:35 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-17 20:31:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-17 20:31:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 20:31:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:31:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 20:31:40 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1da9f44c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16a83016, org.springframework.security.web.context.SecurityContextHolderFilter@494c452b, org.springframework.security.web.header.HeaderWriterFilter@377b773c, org.springframework.web.filter.CorsFilter@592efd6, org.springframework.security.web.authentication.logout.LogoutFilter@6b6b4177, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@25093079, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d41881, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f04349b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33903444, org.springframework.security.web.session.SessionManagementFilter@1104cc93, org.springframework.security.web.access.ExceptionTranslationFilter@97e9568, org.springframework.security.web.access.intercept.AuthorizationFilter@35e7cdb2]
+2023-10-17 20:31:40 [main] INFO  c.f.f.QuickstartApplicationTests - Started QuickstartApplicationTests in 10.031 seconds (process running for 11.495)
+2023-10-17 20:31:41 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:31:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-17 20:31:41 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-17 20:32:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-17 20:32:58 [main] INFO  c.f.foundation.QuickstartApplication - Starting QuickstartApplication using Java 17.0.6 with PID 17952 (C:\Users\lalit\checkouts\quickstart\target\classes started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-10-17 20:32:58 [main] INFO  c.f.foundation.QuickstartApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 20:33:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 20:33:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 111 ms. Found 5 JPA repository interfaces.
+2023-10-17 20:33:00 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9193 (http)
+2023-10-17 20:33:00 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9193"]
+2023-10-17 20:33:00 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-17 20:33:00 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-10-17 20:33:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-17 20:33:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1998 ms
+2023-10-17 20:33:01 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 20:33:01 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-17 20:33:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-17 20:33:01 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@495da9a7
+2023-10-17 20:33:01 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-17 20:33:01 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-17 20:33:01 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-17 20:33:02 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 20:33:02 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:33:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 20:33:04 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3c0b9643, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@746f1505, org.springframework.security.web.context.SecurityContextHolderFilter@728cf276, org.springframework.security.web.header.HeaderWriterFilter@30be77cd, org.springframework.web.filter.CorsFilter@1507bc3, org.springframework.security.web.authentication.logout.LogoutFilter@1465914, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@67cd193d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69a8191e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ab7b0f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@202ed88d, org.springframework.security.web.session.SessionManagementFilter@1c61011b, org.springframework.security.web.access.ExceptionTranslationFilter@46ebd87a, org.springframework.security.web.access.intercept.AuthorizationFilter@36afd06f]
+2023-10-17 20:33:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9193"]
+2023-10-17 20:33:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9193 (http) with context path ''
+2023-10-17 20:33:05 [main] INFO  c.f.foundation.QuickstartApplication - Started QuickstartApplication in 6.798 seconds (process running for 7.355)
+2023-10-17 20:34:04 [http-nio-9193-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17 20:34:04 [http-nio-9193-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-17 20:34:04 [http-nio-9193-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-10-17 20:37:58 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:37:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-17 20:37:58 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-17 20:38:14 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.fakecoders.foundation.QuickstartApplicationTests]: QuickstartApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-17 20:38:14 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.fakecoders.foundation.QuickstartApplication for test class com.fakecoders.foundation.QuickstartApplicationTests
+2023-10-17 20:38:15 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-17 20:38:15 [main] INFO  c.f.f.QuickstartApplicationTests - Starting QuickstartApplicationTests using Java 17.0.6 with PID 11504 (started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-10-17 20:38:15 [main] INFO  c.f.f.QuickstartApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 20:38:16 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 20:38:17 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 5 JPA repository interfaces.
+2023-10-17 20:38:18 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 20:38:18 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-17 20:38:18 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-17 20:38:19 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c997de8
+2023-10-17 20:38:19 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-17 20:38:19 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-17 20:38:19 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-17 20:38:21 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 20:38:21 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:38:22 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 20:38:25 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2b1f0667, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6000ca67, org.springframework.security.web.context.SecurityContextHolderFilter@18be7f57, org.springframework.security.web.header.HeaderWriterFilter@275ff5f8, org.springframework.web.filter.CorsFilter@27e25c2f, org.springframework.security.web.authentication.logout.LogoutFilter@45f20384, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@402fdef1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2565b097, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34c79268, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56a7f57f, org.springframework.security.web.session.SessionManagementFilter@7b50e70a, org.springframework.security.web.access.ExceptionTranslationFilter@1786e49f, org.springframework.security.web.access.intercept.AuthorizationFilter@14bbfdee]
+2023-10-17 20:38:26 [main] INFO  c.f.f.QuickstartApplicationTests - Started QuickstartApplicationTests in 11.502 seconds (process running for 13.194)
+2023-10-17 20:38:26 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:38:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-17 20:38:26 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-17 20:39:07 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-17 20:39:07 [main] INFO  c.f.foundation.QuickstartApplication - Starting QuickstartApplication using Java 17.0.6 with PID 13732 (C:\Users\lalit\checkouts\quickstart\target\classes started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-10-17 20:39:07 [main] INFO  c.f.foundation.QuickstartApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 20:39:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 20:39:08 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 5 JPA repository interfaces.
+2023-10-17 20:39:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9193 (http)
+2023-10-17 20:39:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9193"]
+2023-10-17 20:39:09 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-17 20:39:09 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-10-17 20:39:09 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-17 20:39:09 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2066 ms
+2023-10-17 20:39:10 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 20:39:10 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-17 20:39:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-17 20:39:10 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75b363c3
+2023-10-17 20:39:10 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-17 20:39:10 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-17 20:39:10 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-17 20:39:11 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 20:39:12 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:39:12 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 20:39:13 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1bff4cb9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c521a79, org.springframework.security.web.context.SecurityContextHolderFilter@1b81a499, org.springframework.security.web.header.HeaderWriterFilter@388b9799, org.springframework.web.filter.CorsFilter@6b0f50d8, org.springframework.security.web.authentication.logout.LogoutFilter@6385b07d, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@508abc74, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2b39e77d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@201c1d99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36b4cbb8, org.springframework.security.web.session.SessionManagementFilter@3a5e591b, org.springframework.security.web.access.ExceptionTranslationFilter@56a69c47, org.springframework.security.web.access.intercept.AuthorizationFilter@14c06f50]
+2023-10-17 20:39:14 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9193"]
+2023-10-17 20:39:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9193 (http) with context path ''
+2023-10-17 20:39:14 [main] INFO  c.f.foundation.QuickstartApplication - Started QuickstartApplication in 6.951 seconds (process running for 7.545)
+2023-10-17 20:39:25 [http-nio-9193-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17 20:39:25 [http-nio-9193-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-17 20:39:25 [http-nio-9193-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2023-10-17 20:39:25 [http-nio-9193-exec-1] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@72960957 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@57155bc5 
+2023-10-17 20:39:25 [http-nio-9193-exec-1] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:39:25 [http-nio-9193-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.] with root cause
+java.lang.IllegalArgumentException: When allowCredentials is true, allowedOrigins cannot contain the special value "*" since that cannot be set on the "Access-Control-Allow-Origin" response header. To allow credentials to a set of origins, list them explicitly or consider using "allowedOriginPatterns" instead.
+	at org.springframework.web.cors.CorsConfiguration.validateAllowCredentials(CorsConfiguration.java:516)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:538)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1275)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.servlet.resource.ResourceUrlEncodingFilter.doFilter(ResourceUrlEncodingFilter.java:66)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-17 20:39:25 [http-nio-9193-exec-1] ERROR c.f.f.q.s.c.JwtAuthenticationEntryPoint - User is unauthorised. Routing from the entry point
+2023-10-17 20:39:25 [http-nio-9193-exec-1] INFO  c.f.f.q.s.c.JwtAuthenticationEntryPoint - header null 
+2023-10-17 20:41:06 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:41:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-17 20:41:06 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-17 20:41:21 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.fakecoders.foundation.QuickstartApplicationTests]: QuickstartApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-17 20:41:21 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.fakecoders.foundation.QuickstartApplication for test class com.fakecoders.foundation.QuickstartApplicationTests
+2023-10-17 20:41:22 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-17 20:41:22 [main] INFO  c.f.f.QuickstartApplicationTests - Starting QuickstartApplicationTests using Java 17.0.6 with PID 12296 (started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-10-17 20:41:22 [main] INFO  c.f.f.QuickstartApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 20:41:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 20:41:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 117 ms. Found 5 JPA repository interfaces.
+2023-10-17 20:41:25 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 20:41:25 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-17 20:41:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-17 20:41:27 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bda01da
+2023-10-17 20:41:27 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-17 20:41:27 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-17 20:41:27 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-17 20:41:28 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 20:41:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:41:30 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 20:41:33 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d27a744, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41185195, org.springframework.security.web.context.SecurityContextHolderFilter@8ae7e03, org.springframework.security.web.header.HeaderWriterFilter@4dea763c, org.springframework.web.filter.CorsFilter@1849d35a, org.springframework.security.web.authentication.logout.LogoutFilter@6bd2c51d, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@37fc7e3c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6b6b4177, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@bf32f3f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2154de40, org.springframework.security.web.session.SessionManagementFilter@7e047d85, org.springframework.security.web.access.ExceptionTranslationFilter@266b7d1, org.springframework.security.web.access.intercept.AuthorizationFilter@2c9616bb]
+2023-10-17 20:41:34 [main] INFO  c.f.f.QuickstartApplicationTests - Started QuickstartApplicationTests in 11.845 seconds (process running for 13.458)
+2023-10-17 20:41:34 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:41:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-17 20:41:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2023-10-17 20:42:10 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-17 20:42:10 [main] INFO  c.f.foundation.QuickstartApplication - Starting QuickstartApplication using Java 17.0.6 with PID 12748 (C:\Users\lalit\checkouts\quickstart\target\classes started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-10-17 20:42:10 [main] INFO  c.f.foundation.QuickstartApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-17 20:42:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-17 20:42:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 5 JPA repository interfaces.
+2023-10-17 20:42:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9193 (http)
+2023-10-17 20:42:12 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9193"]
+2023-10-17 20:42:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-17 20:42:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-10-17 20:42:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-17 20:42:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1868 ms
+2023-10-17 20:42:12 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-17 20:42:12 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-10-17 20:42:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-10-17 20:42:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@df9d400
+2023-10-17 20:42:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-10-17 20:42:13 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-10-17 20:42:13 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-17 20:42:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-17 20:42:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:42:15 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-17 20:42:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@504f2bcd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3c7e7ffd, org.springframework.security.web.context.SecurityContextHolderFilter@42b6acc2, org.springframework.security.web.header.HeaderWriterFilter@728cf276, org.springframework.web.filter.CorsFilter@45d28ab7, org.springframework.security.web.authentication.logout.LogoutFilter@3c0b9643, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@4a7c8cb7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a819769, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6479b4cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@51dd74a0, org.springframework.security.web.session.SessionManagementFilter@cfe7be3, org.springframework.security.web.access.ExceptionTranslationFilter@75af5f2a, org.springframework.security.web.access.intercept.AuthorizationFilter@6ac0c3aa]
+2023-10-17 20:42:16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9193"]
+2023-10-17 20:42:16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9193 (http) with context path ''
+2023-10-17 20:42:16 [main] INFO  c.f.foundation.QuickstartApplication - Started QuickstartApplication in 6.502 seconds (process running for 7.07)
+2023-10-17 20:42:17 [http-nio-9193-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-17 20:42:17 [http-nio-9193-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-17 20:42:17 [http-nio-9193-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-10-17 20:42:17 [http-nio-9193-exec-3] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@62194600 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@70702e60 
+2023-10-17 20:42:17 [http-nio-9193-exec-3] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:42:17 [http-nio-9193-exec-3] INFO  c.f.f.q.service.impl.AuthService - inside JwtAuthenticationFilter sevice
+2023-10-17 20:42:17 [http-nio-9193-exec-3] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail lalitbodana236@gmail.com 
+2023-10-17 20:42:17 [http-nio-9193-exec-3] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail user lalitbodana236@gmail.com 
+2023-10-17 20:42:17 [http-nio-9193-exec-3] INFO  c.f.f.q.service.impl.AuthService -  true , test1 
+2023-10-17 20:42:17 [http-nio-9193-exec-3] INFO  c.f.f.q.a.controller.AuthController - Logged in User returned [API]: lalitbodana236@gmail.com
+2023-10-17 20:42:17 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3751bd6 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@db2f410 
+2023-10-17 20:42:17 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:42:17 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-10-17 20:42:17 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter authHeader Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTU1MzcsImV4cCI6MTY5NzY0MTkzN30.FLc83Y_9gQYonu6w5RmO5JuYn5SkkoJeHJFMZzYE9B8
+2023-10-17 20:42:17 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter jwt  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTU1MzcsImV4cCI6MTY5NzY0MTkzN30.FLc83Y_9gQYonu6w5RmO5JuYn5SkkoJeHJFMZzYE9B8
+2023-10-17 20:42:17 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter userEmail lalitbodana236@gmail.com
+2023-10-17 20:42:17 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in
+2023-10-17 20:42:17 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in
+2023-10-17 20:42:18 [http-nio-9193-exec-2] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in in
+2023-10-17 20:42:22 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@63eccb73 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@6d2b38a6 
+2023-10-17 20:42:22 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:42:22 [http-nio-9193-exec-9] INFO  c.f.f.q.advice.AuthControllerAdvice - Device info cannot be null
+2023-10-17 20:42:54 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@738a1acf , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@7d4dfb16 
+2023-10-17 20:42:54 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:42:54 [http-nio-9193-exec-5] INFO  c.f.f.q.service.impl.AuthService - inside JwtAuthenticationFilter sevice
+2023-10-17 20:42:54 [http-nio-9193-exec-5] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail lalitbodana236@gmail.com 
+2023-10-17 20:42:54 [http-nio-9193-exec-5] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail user lalitbodana236@gmail.com 
+2023-10-17 20:42:54 [http-nio-9193-exec-5] INFO  c.f.f.q.service.impl.AuthService -  true , test1 
+2023-10-17 20:42:54 [http-nio-9193-exec-5] INFO  c.f.f.q.a.controller.AuthController - Logged in User returned [API]: lalitbodana236@gmail.com
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@23c386c , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@28ff78e3 
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json;charset=utf-8 
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter authHeader Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTU1MzcsImV4cCI6MTY5NzY0MTkzN30.FLc83Y_9gQYonu6w5RmO5JuYn5SkkoJeHJFMZzYE9B8
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter jwt eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTU1MzcsImV4cCI6MTY5NzY0MTkzN30.FLc83Y_9gQYonu6w5RmO5JuYn5SkkoJeHJFMZzYE9B8
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter userEmail lalitbodana236@gmail.com
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in in
+2023-10-17 20:44:31 [http-nio-9193-exec-4] ERROR c.f.f.q.s.c.JwtAuthenticationEntryPoint - User is unauthorised. Routing from the entry point
+2023-10-17 20:44:31 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationEntryPoint - header Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTU1MzcsImV4cCI6MTY5NzY0MTkzN30.FLc83Y_9gQYonu6w5RmO5JuYn5SkkoJeHJFMZzYE9B8 
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@11356321 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@1ff29eaf 
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json;charset=utf-8 
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter authHeader Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTU1MzcsImV4cCI6MTY5NzY0MTkzN30.FLc83Y_9gQYonu6w5RmO5JuYn5SkkoJeHJFMZzYE9B8
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter jwt eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTc1NTU1MzcsImV4cCI6MTY5NzY0MTkzN30.FLc83Y_9gQYonu6w5RmO5JuYn5SkkoJeHJFMZzYE9B8
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter userEmail lalitbodana236@gmail.com
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in
+2023-10-17 20:45:02 [http-nio-9193-exec-10] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in in
+2023-10-17 20:45:29 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-17 20:45:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-10-17 20:45:29 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,88 @@
+2023-09-26 08:51:08 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-09-26 08:51:08 [main] INFO  c.f.foundation.QuickstartApplication - Starting QuickstartApplication using Java 17.0.6 with PID 12116 (C:\Users\lalit\checkouts\quickstart\target\classes started by lalit in C:\Users\lalit\checkouts\quickstart)
+2023-09-26 08:51:08 [main] INFO  c.f.foundation.QuickstartApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-26 08:51:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-26 08:51:09 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 94 ms. Found 5 JPA repository interfaces.
+2023-09-26 08:51:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9193 (http)
+2023-09-26 08:51:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9193"]
+2023-09-26 08:51:10 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-26 08:51:10 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-26 08:51:11 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-26 08:51:11 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2760 ms
+2023-09-26 08:51:11 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-26 08:51:11 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-09-26 08:51:11 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-09-26 08:51:12 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eee08f5
+2023-09-26 08:51:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-09-26 08:51:12 [main] INFO  SQL dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-09-26 08:51:12 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-09-26 08:51:13 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-26 08:51:13 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-26 08:51:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-26 08:51:16 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@808f65, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56540a58, org.springframework.security.web.context.SecurityContextHolderFilter@3a7deba5, org.springframework.security.web.header.HeaderWriterFilter@1a819769, org.springframework.web.filter.CorsFilter@15c0a8ad, org.springframework.security.web.authentication.logout.LogoutFilter@45d28ab7, com.fakecoders.foundation.quickstart.security.config.JwtAuthenticationFilter@45cddfd3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c96cbe7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f2bb798, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@10bf2185, org.springframework.security.web.session.SessionManagementFilter@7fb84ef7, org.springframework.security.web.access.ExceptionTranslationFilter@42b6acc2, org.springframework.security.web.access.intercept.AuthorizationFilter@2c3f47ba]
+2023-09-26 08:51:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9193"]
+2023-09-26 08:51:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 9193 (http) with context path ''
+2023-09-26 08:51:17 [main] INFO  c.f.foundation.QuickstartApplication - Started QuickstartApplication in 9.477 seconds (process running for 10.371)
+2023-09-26 09:04:53 [http-nio-9193-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-26 09:04:53 [http-nio-9193-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-26 09:04:53 [http-nio-9193-exec-2] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2023-09-26 09:04:53 [http-nio-9193-exec-1] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@7a323077 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@7766639a 
+2023-09-26 09:04:53 [http-nio-9193-exec-1] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-09-26 09:04:53 [http-nio-9193-exec-1] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-09-26 09:04:53 [http-nio-9193-exec-1] INFO  c.f.f.q.service.impl.AuthService - inside JwtAuthenticationFilter sevice
+2023-09-26 09:04:53 [http-nio-9193-exec-1] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail lalitbodana236@gmail.com 
+2023-09-26 09:04:53 [http-nio-9193-exec-1] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail user lalitbodana236@gmail.com 
+2023-09-26 09:04:54 [http-nio-9193-exec-1] INFO  c.f.f.q.service.impl.AuthService -  false , test 
+2023-09-26 09:04:55 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@3a8a95c8 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@344d6d31 
+2023-09-26 09:04:55 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-09-26 09:04:55 [http-nio-9193-exec-4] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-09-26 09:04:55 [http-nio-9193-exec-4] INFO  c.f.f.q.service.impl.AuthService - inside JwtAuthenticationFilter sevice
+2023-09-26 09:04:55 [http-nio-9193-exec-4] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail lalitbodana236@gmail.com 
+2023-09-26 09:04:55 [http-nio-9193-exec-4] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail user lalitbodana236@gmail.com 
+2023-09-26 09:04:56 [http-nio-9193-exec-4] INFO  c.f.f.q.service.impl.AuthService -  false , test 
+2023-09-26 09:04:58 [http-nio-9193-exec-6] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@480eb6cd , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@46c94064 
+2023-09-26 09:04:58 [http-nio-9193-exec-6] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-09-26 09:04:58 [http-nio-9193-exec-6] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-09-26 09:04:58 [http-nio-9193-exec-6] INFO  c.f.f.q.service.impl.AuthService - inside JwtAuthenticationFilter sevice
+2023-09-26 09:04:58 [http-nio-9193-exec-6] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail lalitbodana236@gmail.com 
+2023-09-26 09:04:58 [http-nio-9193-exec-6] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail user lalitbodana236@gmail.com 
+2023-09-26 09:04:58 [http-nio-9193-exec-6] INFO  c.f.f.q.service.impl.AuthService -  false , test 
+2023-09-26 09:05:06 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@71eadf8e , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@7f2d2e1b 
+2023-09-26 09:05:06 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-09-26 09:05:06 [http-nio-9193-exec-5] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-09-26 09:05:06 [http-nio-9193-exec-5] INFO  c.f.f.q.service.impl.AuthService - inside JwtAuthenticationFilter sevice
+2023-09-26 09:05:06 [http-nio-9193-exec-5] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail lalitbodana236@gmail.com 
+2023-09-26 09:05:06 [http-nio-9193-exec-5] INFO  c.f.f.q.service.impl.UserServiceImpl - findByEmail user lalitbodana236@gmail.com 
+2023-09-26 09:05:07 [http-nio-9193-exec-5] INFO  c.f.f.q.service.impl.AuthService -  true , test1 
+2023-09-26 09:05:07 [http-nio-9193-exec-5] INFO  c.f.f.q.a.controller.AuthController - Logged in User returned [API]: lalitbodana236@gmail.com
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@6de2af9a , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@63255d8e 
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter authHeader Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTU2OTkzMDcsImV4cCI6MTY5NTc4NTcwN30.foiH9hns9d0n2wtTdxd3H5dzAYcTNW9onltG26upbxQ
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter jwt  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTU2OTkzMDcsImV4cCI6MTY5NTc4NTcwN30.foiH9hns9d0n2wtTdxd3H5dzAYcTNW9onltG26upbxQ
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter userEmail lalitbodana236@gmail.com
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in
+2023-09-26 09:05:07 [http-nio-9193-exec-7] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in in
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@32bb9373 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@3c7c6a8c 
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter authHeader Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTU2OTkzMDcsImV4cCI6MTY5NTc4NTcwN30.foiH9hns9d0n2wtTdxd3H5dzAYcTNW9onltG26upbxQ
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter jwt  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTU2OTkzMDcsImV4cCI6MTY5NTc4NTcwN30.foiH9hns9d0n2wtTdxd3H5dzAYcTNW9onltG26upbxQ
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header org.springframework.security.web.header.HeaderWriterFilter$HeaderWriterRequest@630adf65 , request org.springframework.security.web.firewall.StrictHttpFirewall$StrictFirewalledRequest$2@6dcd3cac 
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter header application/json 
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter authHeader Bearer  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTU2OTkzMDcsImV4cCI6MTY5NTc4NTcwN30.foiH9hns9d0n2wtTdxd3H5dzAYcTNW9onltG26upbxQ
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter jwt  eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTU2OTkzMDcsImV4cCI6MTY5NTc4NTcwN30.foiH9hns9d0n2wtTdxd3H5dzAYcTNW9onltG26upbxQ
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter userEmail lalitbodana236@gmail.com
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter userEmail lalitbodana236@gmail.com
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in
+2023-09-26 09:05:21 [http-nio-9193-exec-8] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in in
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.s.c.JwtAuthenticationFilter - inside JwtAuthenticationFilter in in in
+2023-09-26 09:05:21 [http-nio-9193-exec-9] INFO  c.f.f.q.a.controller.AuthController - Created new Jwt Auth token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsYWxpdGJvZGFuYTIzNkBnbWFpbC5jb20iLCJpYXQiOjE2OTU2OTkzMjEsImV4cCI6MTY5NTc4NTcyMX0.HF_ENEap6_K1DQK656RN97p4AEvLMDprj7tNhgowuk8
+2023-09-26 09:08:11 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-09-26 09:08:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2023-09-26 09:08:11 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
