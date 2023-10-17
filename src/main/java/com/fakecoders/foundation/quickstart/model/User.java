@@ -1,5 +1,8 @@
 package com.fakecoders.foundation.quickstart.model;
 
+import org.hibernate.envers.Audited;
+
+import com.fakecoders.foundation.quickstart.model.audit.BaseEntity;
 import com.fakecoders.foundation.quickstart.model.audit.DateAudit;
 
 import jakarta.persistence.Column;
@@ -23,7 +26,8 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 @Builder
-public class User extends DateAudit{
+@Audited
+public class User extends BaseEntity{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

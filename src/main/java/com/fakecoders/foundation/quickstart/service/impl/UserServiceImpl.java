@@ -1,5 +1,8 @@
 package com.fakecoders.foundation.quickstart.service.impl;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -154,6 +157,9 @@ public class UserServiceImpl implements IUserService {
 		String password=passwordEncoder.encode(registerRequest.getPassword());
 		newUser.setPassword(password);
 		newUser.setRole(Role.USER);
+		
+		newUser.setCreatedTime(new Date());
+		newUser.setModifiedTime(new Date());
 		return newUser;
 	}
 

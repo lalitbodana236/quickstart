@@ -1,5 +1,7 @@
 package com.fakecoders.foundation.quickstart.model;
 
+import org.hibernate.envers.Audited;
+
 import com.fakecoders.foundation.quickstart.model.audit.DateAudit;
 import com.fakecoders.foundation.quickstart.model.token.RefreshToken;
 
@@ -24,6 +26,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Audited
 public class UserDevice extends DateAudit {
 
     @Id

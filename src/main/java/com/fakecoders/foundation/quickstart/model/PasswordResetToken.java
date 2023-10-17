@@ -3,6 +3,7 @@ package com.fakecoders.foundation.quickstart.model;
 import java.time.Instant;
 
 import org.hibernate.annotations.NaturalId;
+import org.hibernate.envers.Audited;
 
 import com.fakecoders.foundation.quickstart.model.audit.DateAudit;
 
@@ -25,6 +26,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Audited
 public class PasswordResetToken extends DateAudit {
 
     @Id
