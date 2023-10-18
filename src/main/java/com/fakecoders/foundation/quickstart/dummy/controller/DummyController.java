@@ -17,7 +17,7 @@ public class DummyController {
 	IDummyService iDummyService;
 	
 	
-	
+	@Autowired
 	public DummyController(IDummyService iDummyService) {
 		super();
 		this.iDummyService = iDummyService;
@@ -28,6 +28,12 @@ public class DummyController {
 	@GetMapping("/")
 	public String dummy() {
 		return iDummyService.makePayment();
+		
+	}
+	
+	@GetMapping("/test")
+	public String test() {
+		return "this is dummy api";
 		
 	}
 }
