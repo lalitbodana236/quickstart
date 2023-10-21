@@ -1,0 +1,43 @@
+version: '3.8'
+networks:
+  bootapp:
+volumes:
+  volume:  
+services:
+  # MySQL database
+  dbservice:
+    image: mysql
+    container_name: mysql-container
+    ports:
+      - "3307:3306"
+    networks:
+      - bootapp
+    volumes:
+      - volume:/var/lib/mysql
+      
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: quickstart
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -uroot -proot"]
+      timeout: 20s
+      retries: 10 
+    # Spring Boot application
+  appservice:
+    image: openjdk:17
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: quickstart-container
+    ports:
+      - 8080:9193
+    networks:
+      - bootapp
+    depends_on:
+      - dbservice
+    environment:
+      MYSQL_HOST: dbservice
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_PORT: 3306  
+     
